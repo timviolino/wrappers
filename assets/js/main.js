@@ -70,7 +70,8 @@
 				});
 
 	// Sidebar.
-		var $sidebar = $('#sidebar'),
+	 $("#sidebar").load("sidebar.html", function() {
+			var $sidebar = $('#sidebar'),
 			$sidebar_inner = $sidebar.children('.inner');
 
 		// Inactive by default on <= large.
@@ -258,5 +259,7 @@
 				});
 
 			});
+		}); 
+		
 
 })(jQuery);
