@@ -69,8 +69,8 @@
 
 				});
 
-	// Sidebar.
-	 $("#sidebar").load("sidebar.html", function() {
+	// Load in sidebar with toggling
+	 $("#sidebar").load("/sidebar.html", function() {
 			var $sidebar = $('#sidebar'),
 			$sidebar_inner = $sidebar.children('.inner');
 
@@ -261,5 +261,7 @@
 			});
 		}); 
 		
+	// Load in header
+	$("#header").load("/header.html");
 
 })(jQuery);
